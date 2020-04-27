@@ -6,10 +6,10 @@ public class Exercise {
     public static float Calculate(int[] a){
          
     
-        int m = 1;                           // Описуємо потрібну змінну і масив
+        int m = 1;                           // Opysuyemo potribnu zminnu i masyv
         int a1[] = new int[a.length];
 
-        for (int i = 0; i < a.length; i++) {        // Створюєм масив з підрахунками
+        for (int i = 0; i < a.length; i++) {        // Stvoryemo masyv z pidrahunkamy
             for (int j = 0; j < a.length; j++){
                 if ((a[j] == a[i] ) && (j != i)){ ++m;       }
             }
@@ -18,17 +18,17 @@ public class Exercise {
         }
 
         int max = a1[0];
-                                               // Шукаємо саме більше значення в масиві
+                                               // Shukaemo same bilshe znachennya v masyvi
         for (int i = 0; i < a.length - 1; i++){
             if (max <= a1[i+1]){
                 max = a1[i+1];}
         }      
-                                                  // Шукаємо якому значенню належить головний масив
+                                                  // Shukaemo yakomu zhachenny nalezhit' masyv
         int res = 0;
         for (int i = 0; i < a1.length; i++){
             if (max == a1[i]){ 
                 res = a[i];
-                break;   // Найбільш  повторюване число виводим на екран
+                break;   // Naibilsh povtoryvane chyslo vyvodym na ekran
             }
         }
        

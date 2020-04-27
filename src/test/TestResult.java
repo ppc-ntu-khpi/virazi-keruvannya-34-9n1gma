@@ -7,10 +7,10 @@ import java.util.Arrays;
 public class TestResult {
 
     public static void main(String[] args) {
-        int[]a = {1,2,3,2,2,6,7,8,9,1};
+        int[]a = {3,6,7,1,7,1,7,8,7,1};
         
 
-        System.out.println(Arrays.toString(a));  // Виводим на екран масив що вийшов 
-        System.out.println("Число що найчастіше повторюється " + Exercise.Calculate(a));
+        System.out.println(Arrays.toString(a));  // Vyvodim na ekran masyv scho vyishov
+        System.out.println("Chyslo scho naibilshe povtoryuetsya: " + Exercise.Calculate(a));
     }
 }
